@@ -1,0 +1,86 @@
+{
+    "service_provider": "aws",
+    "service_risk": "critical",
+    "service_display_name": "ApiGateway",
+    "service_types": [
+        "network",
+        "application"
+    ],
+    "service_lifecycle": "bronze",
+    "service_identifier": [
+        "AWS::ApiGateway::*"
+    ],
+    "service_review_date": "05/14/2024",
+    "service_requirements": [
+        {
+            "requirement_grc_control": "CS0012318",
+            "requirement_uid": "uid1",
+            "requirement_name": "Ensure API Gateways are Deployed with Private Endpoints",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid2",
+            "requirement_name": "Ensure API Gateways Resource Policies Enforce Least Privilege",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid3",
+            "requirement_name": "Ensure all data in transit is encrypted",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid4",
+            "requirement_name": "Ensure all data at rest is encrypted",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid5",
+            "requirement_name": "Ensure Network Load Balancer (NLB) is deployed with PrivateLink for access to internal resources",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "CS0012318",
+            "requirement_uid": "uid6",
+            "requirement_name": "Ensure CloudTrail logging is enabled and sent to Splunk",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "CS0012318",
+            "requirement_uid": "uid7",
+            "requirement_name": "Ensure API Gateways Resources are tagged according to CG standards",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        }
+    ]
+}

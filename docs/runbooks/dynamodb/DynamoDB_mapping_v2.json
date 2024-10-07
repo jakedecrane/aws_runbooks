@@ -1,0 +1,55 @@
+{
+    "service_provider": "aws",
+    "service_risk": "critical",
+    "service_display_name": "DynamoDB",
+    "service_types": [
+        "database"
+    ],
+    "service_lifecycle": "bronze",
+    "service_identifier": [
+        "AWS::DynamoDB::*"
+    ],
+    "service_review_date": "09/28/2022",
+    "service_requirements": [
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid11",
+            "requirement_name": "Ensure least privilege access is enforced for all DynamoDB users and roles",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid12",
+            "requirement_name": "Ensure DynamoDB tables are encrypted at rest using CG managed CMK",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid13",
+            "requirement_name": "Ensure Data in Transit for DnyamoDB is encrypted using TLS 1.2",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        },
+        {
+            "requirement_grc_control": "",
+            "requirement_uid": "uid14",
+            "requirement_name": "Ensure DynamoDB Utilizes VPC Endpoints for Private Inter-Service Communication",
+            "requirement_severity": {},
+            "requirement_documentation_uri": "",
+            "requirement_security_domain": "",
+            "requirement_tags": [],
+            "requirement_implementations": []
+        }
+    ]
+}
