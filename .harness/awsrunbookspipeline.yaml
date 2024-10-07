@@ -1,0 +1,19 @@
+pipeline:
+  name: aws-runbooks
+  identifier: awsrunbooks
+  projectIdentifier: decranelab
+  orgIdentifier: default
+  tags: {}
+  stages:
+    - stage:
+        name: Trigger Wiz Automation
+        identifier: Trigger_Wiz_Automation
+        description: ""
+        type: Pipeline
+        spec:
+          org: default
+          pipeline: wizautomation
+          project: decranelab
+          inputs: {}
+        when:
+          pipelineStatus: Success
